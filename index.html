@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto IDX Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="chart-wrapper">
+        <iframe id="target-chart" src="https://tradingpoin.com/chart?pair=CRYIDX.B&val=Z-CRY%2FIDX&source=Binomo&timeframe=60"></iframe>
+    </div>
+
+    <div id="idx-box">
+        <div class="header">
+            <span id="sync-status">SYNCING...</span>
+            <span id="next-candle">00s</span>
+        </div>
+        <div id="p-val">---.-----</div>
+        <div id="p-trend">CALIBRATING</div>
+        <div id="p-sig">WAITING WINDOW</div>
+        <div class="footer">AUTO-REFRESH: 0.5s</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
